@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Link-in-bio • Dohuios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:#3f464c;
+      --bg-gradient:#4b545a;
+      --text:#f0f0f0;
+      --muted:#b7bec6;
+      --panel:#0f1113;
+      --panel-hover:#171a1d;
+      --ring:#7f8a93;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      min-height:100vh;
+      font-family:Inter,system-ui,sans-serif;
+      color:var(--text);
+      background:radial-gradient(1000px 700px at 50% -10%,var(--bg-gradient),var(--bg));
+      display:flex;justify-content:center;align-items:center;
+    }
+    .wrap{max-width:720px;width:100%;padding:24px;display:flex;flex-direction:column;align-items:center}
+    .avatar{width:120px;height:120px;border-radius:50%;object-fit:cover;border:4px solid var(--ring);box-shadow:0 8px 20px rgba(0,0,0,.3)}
+    .name{margin:16px 0 12px;font-size:28px;font-weight:700;text-align:center}
+    .socials{display:flex;gap:16px;margin-bottom:24px}
+    .socials a{width:44px;height:44px;display:flex;justify-content:center;align-items:center;background:var(--panel);border-radius:50%;box-shadow:0 4px 12px rgba(0,0,0,.3);transition:.2s}
+    .socials a:hover{background:var(--panel-hover);transform:translateY(-2px)}
+    .socials svg{width:22px;height:22px;fill:var(--text)}
+    .stack{width:100%;display:flex;flex-direction:column;gap:14px;margin-bottom:20px}
+    .card{display:flex;align-items:center;justify-content:center;position:relative;padding:16px 48px 16px 20px;background:var(--panel);border-radius:16px;box-shadow:0 4px 12px rgba(0,0,0,.3);text-decoration:none;color:var(--text);font-weight:600;transition:.2s}
+    .card:hover{background:var(--panel-hover);transform:translateY(-1px)}
+    .label{flex:1;text-align:center}
+    .menu{position:absolute;right:12px;opacity:.7}
+    .menu svg{width:18px;height:18px;fill:var(--muted)}
+    .join{padding:14px 22px;border-radius:999px;background:#0d0f10;color:var(--text);text-decoration:none;font-weight:600;box-shadow:0 4px 12px rgba(0,0,0,.3);margin-top:20px;transition:.2s}
+    .join:hover{filter:brightness(1.05)}
+    footer{margin-top:24px;font-size:14px;color:var(--muted)}
+    footer a{color:var(--muted);text-decoration:none}
+    footer a:hover{text-decoration:underline}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <!-- Ảnh đại diện -->
+    <img class="avatar" src="https://i.ibb.co/8LtsynPR/chibi.jpg" alt="Ảnh đại diện">
+    
+    <h1 class="name">Dohu Ios</h1>
+
+    <!-- Icon mạng xã hội -->
+    <nav class="socials">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/dts_145/" target="_blank" rel="noopener" title="Instagram">
+        <svg viewBox="0 0 24 24">
+          <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-2.1a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8z"/>
+        </svg>
+      </a>
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/dohuios" target="_blank" rel="noopener" title="Facebook">
+        <svg viewBox="0 0 24 24">
+          <path d="M13.5 9H16l.5-3h-3V4.5c0-.9.3-1.5 1.5-1.5H16V0h-2c-2.5 0-4 1.5-4 4v2H8v3h2v9h3V9z"/>
+        </svg>
+      </a>
+    </nav>
+
+    <!-- Danh sách link -->
+    <section class="stack">
+      <a class="card" href="https://ngl.link/dts_1451" target="_blank" rel="noopener">
+        <span class="label">NGL</span>
+        <span class="menu"><svg viewBox="0 0 24 24"><path d="M12 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg></span>
+      </a>
+
+      <a class="card" href="https://www.instagram.com/dts_145/" target="_blank" rel="noopener">
+        <span class="label">Instagram</span>
+        <span class="menu"><svg viewBox="0 0 24 24"><path d="M12 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg></span>
+      </a>
+
+      <a class="card" href="https://www.facebook.com/dohuios" target="_blank" rel="noopener">
+        <span class="label">Facebook</span>
+        <span class="menu"><svg viewBox="0 0 24 24"><path d="M12 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg></span>
+      </a>
+    </section>
+
+    <!-- Nút Join -->
+    <a class="join" href="https://t.me/cheataov145" target="_blank" rel="noopener">
+      Tham gia cùng <strong>dohuios</strong> trên Telegrams
+    </a>
+
+    <footer>
+      <a href="#">Cookie Preferences</a> • <a href="#">Report</a> • <a href="#">Privacy</a>
+    </footer>
+  </main>
+</body>
+</html>
